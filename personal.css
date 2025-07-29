@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
+}
+
+.top-inner-title{
+    flex:none;
+    width:45%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 40px;
+    border-right: 3px solid black;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(237, 250, 251), rgb(31, 192, 236));
+}
+
+.top-inner-subtitle{
+    flex:auto;
+    margin: 0 auto;
+    padding-top: 60px;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(243, 245, 227), rgb(199, 233, 64));
+    border-radius: 10px;
+    border-right: 3px solid black;
+}
+
+.content-container{
+    flex: 1;
+    display:flex;
+    background: linear-gradient(to right, rgb(202, 231, 234), rgb(66, 217, 244));
+    align-items: center;
+    justify-content: center; 
+}
+
+.picture{
+    display: flex;            /* 視窗縮小時自動縮放 */
+    max-width: 700px;
+    height: auto;
+    object-fit: cover;     /* 最大寬度限制 */
+    aspect-ratio: 1 / 1;
+    text-align: center;  
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content{
+    flex:1;
+    font-size: 30px;
+    max-width: 100%;
+    max-height: 100%;
+    display:none;
+    margin-left: 10px;
+}
+
+.myself{
+    flex:1;
+    font-size:30px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin-left: 60px;
+}
+
+.myself li {
+  margin-bottom: 40px;
+}
+
+
+.button-container{
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    border-top:3px solid black ;
+    flex-shrink: 0;
+}
+
+.button-inner{
+    margin-top: 10px;
+    font-size:20px
+}
+
+.information{
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-top:1px solid black ;
+}
+
+@media(max-width:1700px){
+    .content{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1200px){
+    .content{
+        font-size: 15px;
+    }
+    .myself{
+        font-size: 20px;
+    }
+    .picture{
+        width:30%   
+}
+
+}
+
+@media(max-width:600px){
+    .content{
+        font-size: 10px;
+    }
+    .myself{
+        font-size: 10px;
+    }
+
+    .picture{
+        width:50%
+    }
+}
