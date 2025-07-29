@@ -32,7 +32,12 @@ body {
     font-size: 40px;
     border-right: 3px solid black;
     border-radius: 10px;
+    cursor: pointer;
     background: linear-gradient(to right, rgb(237, 250, 251), rgb(31, 192, 236));
+}
+
+.top-inner-title:hover {
+  color: rgb(218, 98, 61);
 }
 
 .top-inner-subtitle{
@@ -43,6 +48,11 @@ body {
     background: linear-gradient(to right, rgb(243, 245, 227), rgb(199, 233, 64));
     border-radius: 10px;
     border-right: 3px solid black;
+    cursor: pointer;
+}
+
+.top-inner-subtitle:hover {
+  color: rgb(218, 98, 61);
 }
 
 .content-container{
